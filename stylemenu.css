@@ -1,0 +1,60 @@
+header {
+    background-color: rgb(234, 236, 120);
+    padding: 18px;
+}
+ /*posição dos topicos*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ta chovendo hamburger */ 
+
+.barra {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(167, 161, 161);
+    margin: 5px;
+}
+
+.menu-hamburger{
+    cursor:pointer;
+    display: none;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+/*editando topicos do menu*/
+
+.menu li a {
+    padding: 10px;
+    color: rgb(60, 139, 60);
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+@media (max-width: 768px) {
+
+    .menu-hamburger {
+        display: block;
+
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .menu.ativo {
+        display: flex;
+    }
+}
